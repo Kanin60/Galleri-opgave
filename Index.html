@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/main-css.css">
+    <script src="assets/js/gallery.js" defer></script> <!-- HUSK AT defer BETYDER AT HTML SKAL LÆSES IGENNEM FØR JAVA SCRIPT KØRE -->
+</head>
+<body>
+    <div class="divBody">
+        <header>
+            <h1>Gallery of Flowers</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Header</a></li>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Footer</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="wrapper"></div>
+            <dialog id="modal">
+                <span id="description"></span>
+            </dialog>
+        </main>
+        <footer>
+            <form novalidate onsubmit="return validate(this);">
+                <fieldset>
+                    <legend>Formular</legend>
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" placeholder="Her kan du skrive dit navn">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Her skal du skrive din email">
+                    <input type="submit" name="send" id="send" value="Send">
+                </fieldset>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>
